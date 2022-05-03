@@ -7,7 +7,8 @@
         <div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" style="height: 422px">
             <ul>
                 <li class="slide-overlay slide-overlay-level-8" data-transition="fade">
-                    <img src='<%= ResolveUrl("~/Content/img/AlbertEinstein.jpg") %>'
+                    <asp:Image runat="server" 
+                        ID="imgAuthor"
                         alt=""
                         data-bgposition="center center"
                         data-bgfit="cover"
@@ -55,12 +56,13 @@
                 <span class="ml-4"><i class="fas fa-briefcase"></i>
                     <asp:Label runat="server" ID="lblOccupation" CssClass="pl-2 text-dark text-3"></asp:Label></span>
             </div>
-            <div class="col-md-8 offset-2 d-flex justify-content-center text-justify pt-4 font-weight-bolder">
+            <div class="col-md-10 offset-1 d-flex justify-content-center text-justify pt-4 font-weight-bold">
                 <span>
                     <asp:Label runat="server" ID="lblRemarks" CssClass="pl-2 text-dark text-3"></asp:Label>
                 </span>
             </div>
         </div>
+        <hr class="gradient"/>
         <div class="row">
             <div class="col-md-9 sort-destination-loader pt-2 sort-destination-loader-loaded">
                 <div class="card-columns">

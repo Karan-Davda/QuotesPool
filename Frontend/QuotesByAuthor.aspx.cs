@@ -58,21 +58,21 @@ public partial class Frontend_QuotesByAuthor : System.Web.UI.Page
                     lblBirthplace.ToolTip = "Unknown";
                 }
 
-                //if (!dr["Remarks"].Equals(DBNull.Value))
-                //{
-                //    lblRemarks.Text = dr["Remarks"].ToString();
-                //}
+                if (!dr["Remarks"].Equals(DBNull.Value))
+                {
+                    lblRemarks.Text = dr["Remarks"].ToString();
+                }
 
-                //if (!dr["Image"].Equals(DBNull.Value))
-                //{
-                //    imgAuthor.ImageUrl = dr["Image"].ToString();
-                //    imgAuthor.AlternateText = dr["AuthorName"].ToString();
-                //}
-                //else
-                //{
-                //    imgAuthor.ImageUrl = "~/Content/img/CommonAuthorImage.jpg";
-                //    imgAuthor.AlternateText = dr["AuthorName"].ToString();
-                //}
+                if (!dr["Image"].Equals(DBNull.Value))
+                {
+                    imgAuthor.ImageUrl = dr["Image"].ToString();
+                    imgAuthor.AlternateText = dr["AuthorName"].ToString();
+                }
+                else
+                {
+                    imgAuthor.ImageUrl = "~/Content/img/CommonAuthorImage.jpg";
+                    imgAuthor.AlternateText = dr["AuthorName"].ToString();
+                }
 
                 //    if (!dr["WikiURL"].Equals(DBNull.Value))
                 //    {
